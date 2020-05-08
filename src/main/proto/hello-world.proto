@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "com.company.helloworld";
+option java_outer_classname = "HelloWorldProto";
+option objc_class_prefix = "HLW";
+
+package helloworld;
+
+// The greeting service definition.
+service Calculator {
+
+  rpc Add (CalcRequest) returns (CalcReply) {}
+
+  rpc Subtract (CalcRequest) returns (CalcReply) {}
+}
+
+message CalcRequest {
+  double arg1 = 1;
+  double arg2 = 2;
+}
+
+message CalcReply {
+  double result = 1;
+}
