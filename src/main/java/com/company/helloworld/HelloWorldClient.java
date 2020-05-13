@@ -71,6 +71,7 @@ public class HelloWorldClient {
       // needing certificates.
       .usePlaintext()
       .build();
+
     try {
       HelloWorldClient client = new HelloWorldClient(channel);
       client.add(arg1, arg2);
