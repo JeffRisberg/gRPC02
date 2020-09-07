@@ -67,7 +67,7 @@ public class HelloWorldServer {
 
     @Override
     public void add(CalcRequest req, StreamObserver<CalcReply> responseObserver) {
-      System.out.println("got a add");
+      System.out.println("got an add");
       double a = req.getArg1();
       double b = req.getArg2();
       CalcReply reply = CalcReply.newBuilder().setResult(a+b).build();
