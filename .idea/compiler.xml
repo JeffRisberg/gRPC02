@@ -4,13 +4,10 @@
     <annotationProcessing>
       <profile default="true" name="Default" enabled="true" />
     </annotationProcessing>
-    <bytecodeTargetLevel>
+    <bytecodeTargetLevel target="1.8">
       <module name="gRPC01.generated" target="1.8" />
       <module name="gRPC01.main" target="1.8" />
       <module name="gRPC01.test" target="1.8" />
-      <module name="gRPC02.generated" target="1.8" />
-      <module name="gRPC02.main" target="1.8" />
-      <module name="gRPC02.test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
